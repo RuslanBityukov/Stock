@@ -26,12 +26,6 @@ class StockTableViewController: UITableViewController {
         
         let character = stock?.quotes[indexPath.row]
         cell.configureCellFor(character!)
-        //var content = cell.defaultContentConfiguration()
-        
-        
-        //content.text = character?.longName
-        //content.secondaryText = character?.symbol
-        //cell.contentConfiguration = content
         return cell
     }
     

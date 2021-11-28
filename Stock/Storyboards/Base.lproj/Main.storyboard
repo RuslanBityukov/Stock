@@ -102,30 +102,36 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="58" translatesAutoresizingMaskIntoConstraints="NO" id="Z9i-Da-V3i">
-                                <rect key="frame" x="16" y="131" width="288" height="102.5"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="IKM-aw-ABi">
+                                <rect key="frame" x="60" y="113" width="200" height="342.5"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Stock Name" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6dd-e6-IgO">
-                                        <rect key="frame" x="90.5" y="0.0" width="107" height="24"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="57" translatesAutoresizingMaskIntoConstraints="NO" id="BgX-Ab-KLs">
-                                        <rect key="frame" x="57.5" y="82" width="173" height="20.5"/>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="17A-Sv-wAq">
+                                        <rect key="frame" x="0.0" y="0.0" width="200" height="200"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="200" id="4fb-oP-ckT"/>
+                                            <constraint firstAttribute="width" constant="200" id="Kg5-A6-517"/>
+                                        </constraints>
+                                    </imageView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="58" translatesAutoresizingMaskIntoConstraints="NO" id="Z9i-Da-V3i">
+                                        <rect key="frame" x="46.5" y="240" width="107" height="102.5"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Value" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Czs-6a-b8w">
-                                                <rect key="frame" x="0.0" y="0.0" width="58" height="20.5"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Stock Name" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6dd-e6-IgO">
+                                                <rect key="frame" x="0.0" y="0.0" width="107" height="24"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Current" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SUA-cp-SXH">
-                                                <rect key="frame" x="115" y="0.0" width="58" height="20.5"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                <nil key="textColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="57" translatesAutoresizingMaskIntoConstraints="NO" id="BgX-Ab-KLs">
+                                                <rect key="frame" x="32.5" y="82" width="42" height="20.5"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Value" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Czs-6a-b8w">
+                                                        <rect key="frame" x="0.0" y="0.0" width="42" height="20.5"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
                                         </subviews>
                                     </stackView>
                                 </subviews>
@@ -134,14 +140,13 @@
                         <viewLayoutGuide key="safeArea" id="dw9-kc-e90"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="Z9i-Da-V3i" firstAttribute="top" secondItem="dw9-kc-e90" secondAttribute="top" constant="40" id="THm-Nj-P5R"/>
-                            <constraint firstItem="Z9i-Da-V3i" firstAttribute="leading" secondItem="dw9-kc-e90" secondAttribute="leading" constant="16" id="rPL-XT-OzQ"/>
-                            <constraint firstItem="dw9-kc-e90" firstAttribute="trailing" secondItem="Z9i-Da-V3i" secondAttribute="trailing" constant="16" id="sP8-0E-wtb"/>
+                            <constraint firstItem="IKM-aw-ABi" firstAttribute="centerY" secondItem="a21-HI-eG4" secondAttribute="centerY" id="MXr-4b-aE8"/>
+                            <constraint firstItem="IKM-aw-ABi" firstAttribute="centerX" secondItem="a21-HI-eG4" secondAttribute="centerX" id="zxc-Fl-cSl"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="We1-3e-1xF"/>
                     <connections>
-                        <outlet property="currentLabel" destination="SUA-cp-SXH" id="mZN-a6-vm4"/>
+                        <outlet property="stockImageView" destination="17A-Sv-wAq" id="KGV-7H-Xyo"/>
                         <outlet property="stockNameLabel" destination="6dd-e6-IgO" id="nrg-ea-tJk"/>
                         <outlet property="valueLabel" destination="Czs-6a-b8w" id="4WD-Ma-N34"/>
                     </connections>
